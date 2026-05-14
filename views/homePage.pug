@@ -1,0 +1,36 @@
+
+extends ./baseLayout.pug
+
+
+block content 
+	.py-5.my-5.text-center
+		img(class="d-block mx-auto mb-4" src='/img/express.png' alt='Express Logo' width='300px')
+		
+		h1.display-5.fw-bold.text-body-emphasis To-do List App
+		
+		.col-lg-6.mx-auto
+			p.lead.mb-4.pt-2
+				| A simple web app built using 
+				strong Node.js 
+				| and  
+				strong Express
+				| , 
+				br
+				| with the support of the 
+				a(href="https://sequelize.org/" target="_blank") Sequelize ORM
+				| , the  
+				a(href="https://pugjs.org/api/getting-started.html" target="_blank") Pug template engine
+				|  and the 
+				a(href="https://getbootstrap.com/" target="_blank") Bootstrap CSS framework
+				| . 
+				| Source code available on 
+				a(href="https://github.com" target="_blank") Github.
+			
+			p.lead.mb-4
+				strong Beware:
+				|  This web app is intended as a basic first example to showcase
+				|  the express framework and server-side scripting.
+				|  It may contain security vulnerabilities and is definitely not production-ready!
+			
+			.d-grid.gap-2.d-sm-flex.justify-content-sm-center
+				a.btn.btn-primary.btn-lg.px-4.gap-3(href='/todo') Manage your To-do List
